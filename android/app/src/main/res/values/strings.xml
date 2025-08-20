@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">ファイトカレンダー</string>
+    
+    <!-- Hero Messages -->
+    <string name="hero_title">次の1時間を"勝ち時間"に。</string>
+    <string name="hero_sub">予定×実績を一枚で。空き時間をワンタップでフォーカスへ。</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_title">ファイトカレンダーへようこそ</string>
+    <string name="permission_usage_title">使用状況へのアクセス</string>
+    <string name="permission_usage_desc">今日のタイムラインを作るために必要です。</string>
+    <string name="permission_calendar_title">カレンダー連携</string>
+    <string name="permission_calendar_desc">日次サマリと時間帯ログを"透明イベント"で自動反映します。いつでも一括削除できます。</string>
+    <string name="calendar_select_title">書き込み先カレンダー</string>
+    <string name="calendar_select_hint">Googleカレンダーで「Fight Calendar Log」などの新規カレンダーを作成してから選択してください。</string>
+    <string name="working_hours_title">稼働時間設定</string>
+    <string name="working_hours_desc">勝率は稼働時間ベースで計算します。</string>
+    <string name="setup_complete_title">設定完了！</string>
+    <string name="setup_complete_desc">空き時間を見つけて、勝率をアップしていきましょう。</string>
+    
+    <!-- Main Screen -->
+    <string name="today_winrate">今日の勝率</string>
+    <string name="streak_days">連続日数</string>
+    <string name="total_screentime">合計使用時間</string>
+    <string name="timeline_24h">24時間タイムライン</string>
+    <string name="todays_free_time">今日の空き時間</string>
+    <string name="next_free_slot">次の1時間以上の空き枠</string>
+    <string name="no_free_slots">空き時間がありません</string>
+    <string name="free_slot_format">%1$s–%2$s（%3$d分）</string>
+    <string name="free_time_total_format">合計 %1$d時間%2$d分</string>
+    <string name="todays_schedule">今日の時間割</string>
+    
+    <!-- Timeline -->
+    <string name="timeline_title">24時間タイムライン</string>
+    <string name="timeline_mode_title">タイムライン同期</string>
+    <string name="timeline_mode_desc">初期は日次サマリのみ。ONで1時間ごと（最大24件/日）。</string>
+    <string name="timeline_sync_enabled">詳細同期有効</string>
+    <string name="timeline_sync_disabled">サマリのみ</string>
+    
+    <!-- Empty States -->
+    <string name="empty_usage_hint">使用状況へのアクセスを許可すると表示されます</string>
+    <string name="empty_calendar_hint">Googleカレンダーで"Fight Calendar Log"を作成し、書き込み先に選択してください</string>
+    <string name="refresh">更新</string>
+    
+    <!-- Categories -->
+    <string name="category_work">仕事</string>
+    <string name="category_study">学習</string>
+    <string name="category_entertainment">娯楽・SNS</string>
+    <string name="category_tools">ツール</string>
+    <string name="category_unclassified">未分類</string>
+    
+    <!-- Actions -->
+    <string name="action_block">ブロック</string>
+    <string name="action_block_now">ブロック</string>
+    <string name="action_refresh">更新</string>
+    <string name="action_settings">設定</string>
+    <string name="action_next">次へ</string>
+    <string name="action_previous">戻る</string>
+    <string name="action_finish">完了</string>
+    <string name="action_skip">スキップ</string>
+    <string name="action_grant_permission">権限を許可</string>
+    <string name="action_open_settings">設定を開く</string>
+    <string name="action_today">今日</string>
+    <string name="action_prev_day">前日</string>
+    <string name="action_next_day">翌日</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">設定</string>
+    <string name="settings_working_hours">稼働時間</string>
+    <string name="settings_sleep_hours">睡眠時間</string>
+    <string name="settings_calendar">カレンダー設定</string>
+    <string name="settings_sync">同期設定</string>
+    <string name="settings_data">データ管理</string>
+    <string name="working_start_time">稼働開始時刻</string>
+    <string name="working_end_time">稼働終了時刻</string>
+    <string name="sleep_start_time">就寝時刻</string>
+    <string name="sleep_end_time">起床時刻</string>
+    <string name="sync_threshold">同期閾値（分）</string>
+    <string name="sync_threshold_desc">この時間以上の使用のみ同期します</string>
+    <string name="selected_calendar">選択中のカレンダー</string>
+    <string name="select_calendar">カレンダーを選択</string>
+    
+    <!-- Data Management -->
+    <string name="delete_all_calendar">すべての透明イベントを削除</string>
+    <string name="delete_all_calendar_desc">ファイトカレンダーが作成した透明イベントをすべて削除します。よろしいですか？</string>
+    <string name="delete_all_usage_data">すべての使用記録を削除</string>
+    <string name="delete_all_usage_data_desc">保存されているアプリ使用記録をすべて削除します。よろしいですか？</string>
+    <string name="data_deleted">データが削除されました</string>
+    
+    <!-- App Management -->
+    <string name="app_management_title">アプリ管理</string>
+    <string name="uncategorized_apps">未分類アプリ</string>
+    <string name="search_apps">アプリを検索</string>
+    <string name="assign_category">カテゴリ割当</string>
+    <string name="dictionary_suggestion">辞書サジェスト</string>
+    <string name="manual_assignment">手動割当</string>
+    
+    <!-- Widget -->
+    <string name="widget_name">ファイトカレンダー</string>
+    <string name="widget_description">勝率とタイムラインを表示</string>
+    <string name="widget_loading">読み込み中...</string>
+    <string name="widget_no_data">データなし</string>
+    
+    <!-- Time Format -->
+    <string name="time_format_hours_minutes">%1$d時間%2$d分</string>
+    <string name="time_format_minutes">%1$d分</string>
+    <string name="time_format_hours">%1$d時間</string>
+    <string name="winrate_format">%1$d%%</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_sync">データ同期</string>
+    <string name="notification_channel_sync_desc">カレンダー同期の通知</string>
+    <string name="notification_sync_title">カレンダー同期完了</string>
+    <string name="notification_sync_content">本日のデータを同期しました</string>
+    
+    <!-- Errors -->
+    <string name="error_permission_denied">権限が拒否されました</string>
+    <string name="error_calendar_not_found">カレンダーが見つかりません</string>
+    <string name="error_sync_failed">同期に失敗しました</string>
+    <string name="error_no_calendar_selected">カレンダーが選択されていません</string>
+    
+    <!-- Confirmation -->
+    <string name="confirm_delete">削除</string>
+    <string name="confirm_cancel">キャンセル</string>
+    <string name="confirm_yes">はい</string>
+    <string name="confirm_no">いいえ</string>
+    
+    <!-- Gaming Elements -->
+    <string name="streak_title">連勝ストリーク</string>
+    <string name="combo_title">コンボ</string>
+    <string name="level_up">レベルアップ！</string>
+    <string name="achievement_unlocked">実績解除！</string>
+    <string name="battle_won">バトル勝利！</string>
+    <string name="good_job">グッジョブ！</string>
+    
+    <!-- Days of Week -->
+    <string name="monday">月</string>
+    <string name="tuesday">火</string>
+    <string name="wednesday">水</string>
+    <string name="thursday">木</string>
+    <string name="friday">金</string>
+    <string name="saturday">土</string>
+    <string name="sunday">日</string>
+</resources>

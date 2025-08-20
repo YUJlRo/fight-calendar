@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Simplified whale for notifications - white color -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M4,12
+                         C4,8.5 6.5,5.5 10,4.5
+                         C13.5,3.5 17.5,4.5 20,7.5
+                         C22.5,10.5 22.5,14.5 20,17.5
+                         C17.5,20.5 13.5,21.5 10,20.5
+                         C6.5,19.5 4,16.5 4,12
+                         Z
+                         
+                         M2,12
+                         L4.5,11
+                         L4.5,13
+                         L2,12
+                         Z" />
+    
+    <!-- Eye -->
+    <circle
+        android:fillColor="#000000"
+        android:cx="9"
+        android:cy="10"
+        android:radius="1" />
+</vector>

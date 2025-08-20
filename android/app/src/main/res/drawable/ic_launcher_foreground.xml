@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <group 
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        android:translateX="27"
+        android:translateY="27">
+        
+        <!-- 鯨のボディ（メイン） -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M3,12 C3,8.5 6.5,5.5 10,4.5 C13.5,3.5 17.5,4.5 20,7.5 C22.5,10.5 22.5,14.5 20,17.5 C17.5,20.5 13.5,21.5 10,20.5 C6.5,19.5 3,16.5 3,12 Z" />
+        
+        <!-- 尾びれ -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M2,12 L4.5,11 L4.5,13 L2,12 Z" />
+        
+        <!-- 目 -->
+        <circle
+            android:fillColor="#063A3A"
+            cx="9"
+            cy="10"
+            r="1" />
+        
+        <!-- 噴水口 -->
+        <path
+            android:fillColor="#81CAC4"
+            android:pathData="M12,6 C12,4 13,3 13,3 C13,3 14,4 14,6 C14,7 13,8 13,8 C13,8 12,7 12,6 Z" />
+            
+        <path
+            android:fillColor="#81CAC4"
+            android:pathData="M14.5,5 C14.5,3.5 15.2,2.8 15.2,2.8 C15.2,2.8 15.8,3.5 15.8,5 C15.8,6 15.2,6.5 15.2,6.5 C15.2,6.5 14.5,6 14.5,5 Z" />
+    </group>
+</vector>

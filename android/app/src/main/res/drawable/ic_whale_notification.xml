@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- 鯨のボディ（白色） -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M3,12 C3,8.5 6.5,5.5 10,4.5 C13.5,3.5 17.5,4.5 20,7.5 C22.5,10.5 22.5,14.5 20,17.5 C17.5,20.5 13.5,21.5 10,20.5 C6.5,19.5 3,16.5 3,12 Z" />
+    
+    <!-- 尾びれ -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M2,12 L4.5,11 L4.5,13 L2,12 Z" />
+    
+    <!-- 目（黒色で目立たせる） -->
+    <circle
+        android:fillColor="#000000"
+        cx="9"
+        cy="10"
+        r="1" />
+</vector>

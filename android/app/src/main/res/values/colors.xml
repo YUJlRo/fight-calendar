@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material3 Light Theme Colors -->
+    <color name="light_primary">#81CAC4</color>
+    <color name="light_onPrimary">#063A3A</color>
+    <color name="light_primaryContainer">#BAEFEB</color>
+    <color name="light_onPrimaryContainer">#073433</color>
+    <color name="light_secondary">#0F3B46</color>
+    <color name="light_onSecondary">#E0F7F5</color>
+    <color name="light_tertiary">#FF7A59</color>
+    <color name="light_onTertiary">#FFFFFF</color>
+    <color name="light_background">#FFFFFF</color>
+    <color name="light_surface">#F7FBFB</color>
+    <color name="light_onBackground">#063A3A</color>
+    <color name="light_onSurface">#063A3A</color>
+    
+    <!-- Material3 Dark Theme Colors -->
+    <color name="dark_primary">#5DB5AF</color>
+    <color name="dark_onPrimary">#041E1E</color>
+    <color name="dark_primaryContainer">#0E3432</color>
+    <color name="dark_onPrimaryContainer">#C7F6F1</color>
+    <color name="dark_secondary">#0B2C33</color>
+    <color name="dark_onSecondary">#D5F2EF</color>
+    <color name="dark_tertiary">#FF8A6B</color>
+    <color name="dark_onTertiary">#1F0E0B</color>
+    <color name="dark_background">#041E1E</color>
+    <color name="dark_surface">#0E1818</color>
+    <color name="dark_onBackground">#C7F6F1</color>
+    <color name="dark_onSurface">#C7F6F1</color>
+    
+    <!-- Fixed Category Colors -->
+    <color name="category_work">#2BB673</color>
+    <color name="category_study">#2F6DF6</color>
+    <color name="category_entertainment">#FF7A59</color>
+    <color name="category_tools">#7E57C2</color>
+    <color name="category_unused_light">#DFECEA</color>
+    <color name="category_unused_dark">#2A3A39</color>
+    
+    <!-- Widget & Overlay Colors -->
+    <color name="widget_event_overlay">#3481CAC4</color> <!-- 20% transparent -->
+    <color name="free_time_highlight">#1F81CAC4</color> <!-- 12% transparent -->
+    
+    <!-- Common -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FF9800</color>
+</resources>
+</color>
