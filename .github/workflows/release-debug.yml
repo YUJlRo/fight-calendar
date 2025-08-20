@@ -19,23 +19,48 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Grant permission to Gradle
-        run: chmod +x ./android/gradlew
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          api-level: 34
+          build-tools: '34.0.0'
 
-      - name: Build debug APK
-        working-directory: android
-        run: ./gradlew assembleDebug
-
-      - name: Calculate SHA-256
-        working-directory: android/app/build/outputs/apk/debug
+      - name: Ensure local.properties
         run: |
-          sha256sum app-debug.apk | tee SHA256.txt
+          if [ -d "android" ]; then
+            echo "sdk.dir=$ANDROID_SDK_ROOT" > android/local.properties
+          else
+            echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+          fi
+
+      - name: Build debug APK (auto-detect wrapper)
+        run: |
+          set -e
+          if [ -f "./android/gradlew" ]; then
+            chmod +x ./android/gradlew
+            cd android
+            ./gradlew assembleDebug
+          elif [ -f "./gradlew" ]; then
+            chmod +x ./gradlew
+            ./gradlew assembleDebug
+          else
+            echo "::error::Gradle wrapper (gradlew) が見つかりません。android/ または リポジトリ直下に gradlew, gradlew.bat, gradle/wrapper/* をコミットしてください。"
+            exit 1
+          fi
+
+      - name: Collect artifacts and SHA-256
+        run: |
+          APK=$(find . -path "*/outputs/apk/debug/*.apk" -name "*.apk" | head -n 1)
+          echo "Found APK: $APK"
+          mkdir -p artifacts
+          cp "$APK" artifacts/app-debug.apk
+          sha256sum artifacts/app-debug.apk | tee artifacts/SHA256.txt
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            android/app/build/outputs/apk/debug/app-debug.apk
-            android/app/build/outputs/apk/debug/SHA256.txt
+            artifacts/app-debug.apk
+            artifacts/SHA256.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
